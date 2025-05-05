@@ -42,17 +42,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>調酒製作系統</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+    <title>微醺研究所</title>
+    <link rel="stylesheet" href="./styles.css">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://cdn.jsdelivr.net 'unsafe-eval';">
 </head>
 <body>
-    <div id="app" class="container">
-        <div class="card">
-            <h1>載入中...</h1>
-        </div>
-    </div>
-    <script src="script.js"></script>
+    <div id="app"></div>
+    <canvas id="particle-canvas"></canvas>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.21.0/dist/tf.min.js"></script>
+    <script src="./teachablemachine-image.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
